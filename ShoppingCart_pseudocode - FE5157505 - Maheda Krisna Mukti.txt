@@ -1,0 +1,73 @@
+1. Start
+2. READ AND WRITE "select option" with string
+3. WHILE True
+    	PRINT()
+    	PRINT "Please type in one of these"
+    	PRINT "1. Add item"
+    	PRINT "2. Remove Item"
+   	PRINT "3. View Cart"
+
+4. READ AND WRITE "select" with number
+5. STORE "select" with input
+6. IF "select" == 1
+        WHILE True
+            PRINT "1. Handphone     Rp 4500000"
+            PRINT "2. Jam Tangan    Rp 1500000"
+            PRINT "3. Monitor   	Rp 2000000"
+            PRINT "4. Mouse    	Rp 500000"
+            
+            READ AND WRITE "choice" with number
+            STORE "choice" with input
+            
+            READ AND WRITE "item" with string
+            READ AND WRITE "price" with number
+            
+            IF "choice" == 1
+                STORE "item" with "Handphone"
+                STORE "price" with 4500000
+            IF "choice" == 2
+                STORE "item" with "Jam Tangan"
+                STORE "price" with 1500000
+            IF "choice" == 3
+                STORE "item" with "Monitor"
+                STORE "price" with 2000000
+            IF "choice" == 4
+                STORE "item" with "Mouse"
+                STORE "price" with 500000
+           
+             ELSE
+                PRINT "Invalid Input"
+                break
+            
+            STORE "cart" with "item"
+            STORE "prices" with "price
+            
+            PRINT "'item' has been added to your cart."
+            PRINT "The price is 'price'"
+
+7. IF "select" == 2
+	READ AND WRITE "Select item"
+	PRINT "'item' has been remove from your cart."
+
+8. IF select == 3
+	READ AND WRITE "Show Cart" with string
+        IF "cart" EMPTY
+            back to step 2
+        ELSE
+            READ AND WRITE "Checkout" with number
+		PRINT "This is what is in your shopping cart"
+            FOR "item", "price" in "cart", "prices"):
+                PRINT "item       price"
+            ENDFOR
+            
+            STORE "total_item" with "cart" LENGTH
+            FOR "price" in "prices":
+                STORE "total_price" with "total_price" added by "price"
+            ENDFOR
+                 
+            PRINT "Total item in your cart : 'total_item'")
+            PRINT "Total Price : Rp 'total_price'"
+
+    ELSE
+	PRINT "Invalid Input"
+9. End
